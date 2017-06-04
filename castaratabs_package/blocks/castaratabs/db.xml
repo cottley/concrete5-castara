@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Block type table schema
+  This file is used by concrete5 to create the block types database table(s).
+  You can find information on all of the different field types and the general schema here https://goo.gl/P92EY1
+ -->
+<schema
+  xmlns="http://www.concrete5.org/doctrine-xml/0.5"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.concrete5.org/doctrine-xml/0.5 http://concrete5.github.io/doctrine-xml/doctrine-xml-0.5.xsd">
+
+  <table name="btCastaratabs">
+    <!-- The bID column is ALWAYS required !-->
+    <field name="bID" type="integer">
+      <unsigned/>
+      <key/>
+    </field>
+    <field name="jqueryuiversion" type="string" size="255">
+	  <!-- <default value="1.21.1"/> -->
+      <notnull/>
+    </field>
+    <field name="jqueryuitheme" type="string" size="255">
+	  <!-- <default value="redmond"/> -->
+      <notnull/>
+    </field>
+    <field name="jscookieversion" type="string" size="255">
+	  <!-- <default value="2.1.3"/> -->
+      <notnull/>
+    </field>
+    <field name="tabheight" type="string" size="255">
+	  <!-- <default value="calc(100vh - 60px)" /> -->
+      <notnull/>
+    </field>
+    <field name="tabconfig" type="text" size="65535">
+      <notnull/>
+    </field>
+  </table>
+
+</schema>
